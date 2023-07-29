@@ -1,0 +1,73 @@
+.dark-theme {
+  --bg2: #2b2c2d;
+  --text: #ffffff;
+  --bg1: #473e32;
+  --bg3: black;
+  --headings: rgb(254, 253, 253);
+  --modal-bg: #807878;
+  --modal-text: rgb(255, 255, 255);
+  --modal-sh: rgb(0, 0, 0);
+  --modal-hr: rgb(62, 62, 71);
+}
+.light-theme {
+  --bg2: #ffffff;
+  --text: #020202;
+  --bg1: rgba(255, 255, 255, 0.927);
+  --bg3: rgb(173 164 164);
+  --headings: rgb(28, 26, 26);
+  --modal-bg: white;
+  --modal-text: rgb(0, 0, 0);
+  --modal-sh: rgb(0, 0, 0);
+  --modal-hr: rgb(196, 196, 237);
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 384px;
+}
+.right-header h4 {
+  /* background-color: antiquewhite; */
+  margin: 0 5px;
+  font-size: large;
+  cursor: pointer;
+}
+.profile {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(209, 126, 209);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.icon {
+  height: 30px;
+  cursor: pointer;
+}
+.modal {
+  background-color: var(--modal-bg);
+  color: var(--modal-text);
+  box-shadow: 5px 10px 18px var(--modal-sh);
+  height: auto;
+  width: 193px;
+  position: absolute;
+  right: 6px;
+  top: 68px;
+  padding: 10px;
+}
+.modal-child {
+  cursor: pointer;
+  height: 20px;
+  width: 91%;
+  display: flex;
+  padding: 10px;
+  font-size: large;
+}
+.modal-child:hover {
+  background-color: var(--modal-hr);
+}
