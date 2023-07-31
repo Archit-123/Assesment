@@ -3,6 +3,7 @@ import "./HamburgerMenu.css";
 // import Tree from "./Tree";
 import Tooltip from "./Tooltip";
 import TreeStruct from "./TreeStruct";
+import ParentComponent from "./ParentComponent";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +62,8 @@ const HamburgerMenu = () => {
         {activeOption === "board" && <div className="board-child">Board</div>}
         {activeOption === "all" && (
           <div className="tree">
-            <TreeStruct></TreeStruct>
+            {/* <TreeStruct></TreeStruct> */}
+            <ParentComponent></ParentComponent>
           </div>
         )}
       </div>
